@@ -9,7 +9,18 @@
     background-color: black;
     display: flex;
     padding: 15px 40px;
+    align-items: center;
 }
 h1, h3{
     color: white;
+}
+h1{
+    width: 80%;
+}
+h3{
+    margin-right: 100px;
+}
+.colorize{
+    background-color: blue;
+    padding: 10px 20px;
 }
