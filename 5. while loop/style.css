@@ -1,0 +1,22 @@
+.con {
+  width: 800px;
+  height: 800px;
+  border: 1px solid aqua;
+  
+}
+.sqr {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    animation: moves 2s ease-in-out;
+}
+
+@keyframes moves {
+    from{
+        left: 0;
+    }
+    to{
+       left: 100%;
+    }
+}
