@@ -109,7 +109,7 @@
 //   }
 // }
 
-const arr = [1,2,4,2,5,23,5,4,234,6,4,2,123]
+// const arr = [1, 2, 4, 2, 5, 23, 5, 4, 234, 6, 4, 2, 123]
 // let i=0;
 // let searchFiltr = arr.filter(v=>{
 //     i++;
@@ -126,12 +126,12 @@ const arr = [1,2,4,2,5,23,5,4,234,6,4,2,123]
 // console.log(searchedItem, `iterator => ${i}`);
 
 // ! findIndex((v, i, a) => {})
-let i = 0;
-let searchedItem = array.findIndex((v) => {
-  i++;
-  return v === 5;
-});
-console.log(searchedItem, `iterator => ${i}`);
+// let i = 0;
+// let searchedItem = array.findIndex((v) => {
+//   i++;
+//   return v === 5;
+// });
+// console.log(searchedItem, `iterator => ${i}`);
 
 //! findLastIndex((v, i, a) => {})
 // let i = 0;
@@ -252,3 +252,104 @@ console.log(searchedItem, `iterator => ${i}`);
 // "abc" => "abc" => 3 
 // "abc" => "bc" => 0 
 // "abc" => "c" => 0 
+
+
+// console.log(1 == "0" || (true && "hey"));
+// function isSumOddOrEven(arr) {
+//   let sum = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+
+//   return sum % 2 === 0 ? "even" : "odd";
+// }
+
+// // Example usage:
+// console.log(isSumOddOrEven([1, 2, 3]));   // Output: "even"
+// console.log(isSumOddOrEven([1, 2, 3, 4])); // Output: "even"
+// console.log(isSumOddOrEven([1, 3, 5]));   // Output: "odd"
+// console.log(isSumOddOrEven([]));          // Output: "even" (empty array considered as [0])
+
+
+// let x = 5; // Primitive (asar) o'zgaruvchi
+// let y = x; // 'x' qiymatini ko'chirish
+// y = 10;
+
+// console.log(x,y);
+
+// const x=10 //? shadow 
+
+// function OuterFunction() {
+//     console.log(x);
+// }
+// OuterFunction()
+
+// console.log(x);
+
+
+
+// var summ =0;
+// for(let i=1; i<70; i++){
+//     console.log(i);
+//     i+=i
+// }
+
+
+
+// function sayHello() {
+//     console.log("Salom men Javascript dasturi yordamida compilator yordamchisiman");  // buyerida return ishlatilmasa qanday undefined qaytaradi ?
+//     return "hello"
+// }
+// const greeting  = sayHello();// bu yerda natija chiqdi sababi oqib 
+// // kelib return yoqligi uchun andefined qaytdi
+// // console.log(greeting); //undefined bo'lib qoldi 
+
+
+
+// const ac1={
+//     name:"Webbrain Academy",
+//     major:"Frontend",
+//     founded:2022,
+//     students:1000,
+//     mentors:4
+// } 
+// // const ac3 = {}
+
+// // console.log(Object.keys(ac1));
+// // console.log(Object.value(ac1));
+// // console.log(Object.entries(ac1));
+// // console.log(Object.call(a1));
+
+// for(index in ac1){
+//   console.log(ac1[index]);
+// }
+
+// // for(let i in ac1){
+// //     console.log(i +" : " + ac1[i]);
+// // }
+
+// let obj1 = structuredClone(ac1)
+// console.log(obj1);
+
+
+// let num = 5;
+// switch (true) {
+//   case num > 0:
+//     console.log('Raqam musbat');
+//     break;
+//   case num == 0:
+//     console.log('Raqamlar nolga teng');
+//     break;
+//   case num < 0:
+//     console.log('Raqam manfiy');
+//     break;
+//   default:
+//     console.log('Kiritilgan qiymat raqam emas edi');
+// }
+
+
+// console.log([1,2,3,4,5].join(''));
+
+
+//! filter sortirovka qiladi search joylashuv o'rnini o'zgartiradi 
