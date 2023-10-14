@@ -1,0 +1,22 @@
+.login{
+    background-color: aquamarine;
+    width: 200px;
+    height: 40px;
+}
+.wrapper{
+    /* height: 20px;
+    width: 200px; */
+    background-color: green;
+}
+
+#myElement{
+    /* width: 200px; */
+    height: 400px;
+    overflow: auto;
+    border: 1px solid salmon;
+    /* margin: 20px; */
+    padding: 20px;
+    /* justify-content: ;
+     */
+     /* transform: rotate(); */
+}
