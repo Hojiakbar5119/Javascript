@@ -1,0 +1,61 @@
+*{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    /* border: 1px solid; */
+    /* font-family: 'Caveat Brush', cursive; */
+}
+h3{
+    font-family: 'Caveat Brush', cursive;
+}
+
+.container{
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 450px;
+    width: 700px;
+    padding: 30px;
+    display: flex;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+.left{
+    /* padding: 20px; */
+
+    width: 35%;
+}
+.block{
+    display: flex;
+    padding: 2px;
+}
+.answer{
+    width: 100%;
+    border: 1px solid;
+    /* display: block; */
+}
+.answer>input,.answer>h2{
+    width: 100%;
+    display: block;
+    /* margin: 0 auto; */
+    margin: 30px auto;
+    /* font-size: 16px; */
+    background-color: rgb(18, 52, 191);
+    border-radius: 15px;
+    color: aliceblue;
+    height: 80px;
+    font-size: 40px;
+
+}
+h2{
+    background-color: rgb(231 235 238 / 36%) !important;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    color: black !important;
+    /* line-height: -20px; */
+}
