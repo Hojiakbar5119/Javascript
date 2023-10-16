@@ -57,31 +57,55 @@
 // use1.welcomeMs;
 
 
+// class Animals{
+//     speed(hour){
+//         console.log("bu yerda bir necha malumotlarni yozishingiz mumkin");
+//         console.log(`this animal ${hour}km per hour run`);
+//     }
+// }
+
+// class rabbit extends Animals {
+//     info(){
+//         console.log(`quyoni ni 2 ta qulogi bor`);
+//     }
+// }
+// class wolf extends Animals {
+//     info(){
+//         // console.log(this);
+//         console.log(`bo'rini ni 2 ta qulogi bor`);
+//     }
+// }
+
+// // let animals = new Animals()
+// let rb = new rabbit()
+// let wl = new wolf()
+
+// rb.info("quyon")
+// rb.speed("12")
+// console.log("====================");
+// wl.info("bo'ri")
+// wl.speed(10)
+
+
+
 class Animals{
-    speed(hour){
-        console.log("bu yerda bir necha malumotlarni yozishingiz mumkin");
-        console.log(`this animal ${hour}km per hour run`);
+    constructor(name) {
+        this.name = name;
+    }
+    speed(speed,names){
+        console.log(`this ${names} run ${speed}km peer hour`);
     }
 }
 
-class rabbit extends Animals {
-    info(){
-        console.log(`quyoni ni 2 ta qulogi bor`);
+class Animal extends Animals{
+    constructor(name){
+        super(name)
     }
-}
-class wolf extends Animals {
-    info(){
-        // console.log(this);
-        console.log(`bo'rini ni 2 ta qulogi bor`);
+    info(name){
+        console.log(`${name} ni 2ta qulogi bor`);
     }
 }
 
-// let animals = new Animals()
-let rb = new rabbit()
-let wl = new wolf()
-
-rb.info("quyon")
-rb.speed("12")
-console.log("====================");
-wl.info("bo'ri")
-wl.speed(10)
+let rb  = new Animal("quyon")
+rb.speed(12,"quyon")
+rb.info("quyoni")   
