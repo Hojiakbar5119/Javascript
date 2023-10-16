@@ -33,25 +33,55 @@
 
 
 
-class User{
-    constructor(title){
-        this.title = title;
-        console.log(this);
-    }
+// class User{
+//     constructor(title){
+//         this.title = title;
+//         console.log(this);
+//     }
 
-    set welcomeMs(value){
-        console.log(value);
-        // console.log(`Salom mening ismim ${value}`);
-    }
+//     set welcomeMs(value){
+//         console.log(value);
+//         // console.log(`Salom mening ismim ${value}`);
+//     }
 
-    get welcomeMs(){
-        console.log(this);
-        console.log(`Salom mening ismim ${this.title}`);
+//     get welcomeMs(){
+//         console.log(this);
+//         console.log(`Salom mening ismim ${this.title}`);
+//     }
+// }
+
+// let use1= new User("Hojiakbar")
+// let use2= new User("assalom")
+
+// use1.welcomeMs = "Dilshod"
+// use1.welcomeMs;
+
+
+class Animals{
+    speed(hour){
+        console.log("bu yerda bir necha malumotlarni yozishingiz mumkin");
+        console.log(`this animal ${hour}km per hour run`);
     }
 }
 
-let use1= new User("Hojiakbar")
-let use2= new User("assalom")
+class rabbit extends Animals {
+    info(){
+        console.log(`quyoni ni 2 ta qulogi bor`);
+    }
+}
+class wolf extends Animals {
+    info(){
+        // console.log(this);
+        console.log(`bo'rini ni 2 ta qulogi bor`);
+    }
+}
 
-use1.welcomeMs = "Dilshod"
-use1.welcomeMs;
+// let animals = new Animals()
+let rb = new rabbit()
+let wl = new wolf()
+
+rb.info("quyon")
+rb.speed("12")
+console.log("====================");
+wl.info("bo'ri")
+wl.speed(10)
