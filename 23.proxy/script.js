@@ -3,26 +3,42 @@ let user={
     _stir:'1234',
 }
 
-let proxy = new Proxy(user, {
-    // get(target,props){
-    //     // return "Hello world"
+let range={
+    from:1,
+    to:10,
+}
 
-    //     return target[props];
-
-    // }
-
-
-    ownKeys(target){
-       return Object.keys(target).filter(vl=> !vl.startsWith("_"))
+let proxy = new Proxy(range,{
+    has(target,prop){
+        return target.from<=prop && target.to>=prop
     }
+    
 })
 
-// console.log(user.name);
-// console.log(proxy._stir);
+range.to = 10
 
-console.log(proxy);
+console.log(99 in proxy);
 
-for(vl in proxy){
-    // console.log(user[vl]);
-    console.log(vl);
-}
+// let proxy = new Proxy(user, {
+//     // get(target,props){
+//     //     // return "Hello world"
+
+//     //     return target[props];
+
+//     // }
+
+
+//     ownKeys(target){
+//        return Object.keys(target).filter(vl=> !vl.startsWith("_"))
+//     }
+// })
+
+// // console.log(user.name);
+// // console.log(proxy._stir);
+
+// console.log(proxy);
+
+// for(vl in proxy){
+//     // console.log(user[vl]);
+//     console.log(vl);
+// }
