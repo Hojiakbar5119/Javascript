@@ -215,3 +215,37 @@
 
 // // ar1.reverse();
 // console.log(ar1.includes(11));
+
+
+
+//? index of 
+
+const fruits = ['apple', 'banana', 'cherry', 'date', 'fig'];
+
+const bananaIndex = fruits.indexOf('cherry');
+console.log(bananaIndex); // Output: 1
+
+const peachIndex = fruits.indexOf('peach');
+console.log(peachIndex); // Output: -1
+
+
+console.log('Blue Whale'.indexOf('Blue'));
+console.log("======");     // returns  0
+console.log('Blue Whale'.indexOf('Blute'));
+console.log("======");    // returns -1
+console.log('Blue Whale'.indexOf('blue'));
+console.log("======");     // returns -1
+console.log('Blue Whale'.indexOf('Whale', 0));
+console.log("======"); // returns  5
+console.log('Blue Whale'.indexOf('Whale', 5));
+console.log("======"); // returns  5
+console.log('Blue Whale'.indexOf('Whale', 7));
+console.log("======"); // returns -1
+console.log('Blue Whale'.indexOf(''));
+console.log("======");         // returns  0
+console.log('Blue Whale'.indexOf('', 9));
+console.log("======");      // returns  9
+console.log('Blue Whale'.indexOf('', 10));
+console.log("======");     // returns 10
+console.log('Blue Whale'.indexOf('', 11));
+console.log("======");     // returns 10
