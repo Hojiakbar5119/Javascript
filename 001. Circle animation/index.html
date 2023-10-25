@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas with Circles</title>
+    <style>
+        #canvas-container {
+            position: relative;
+        }
+        #canvas {
+            width: auto;
+            height: 900px;
+            border: 1px solid #000;
+        }
+        #radius-slider, #line-width-slider {
+            width: 200px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container">
+        <canvas id="canvas" width="450px" height="300px"></canvas>
+        <input type="range" id="radius-slider" min="10" max="100" value="50">
+        <input type="range" id="line-width-slider" min="1" max="10" value="3">
+    </div>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+        const radiusSlider = document.getElementById('radius-slider');
+        const lineWidthSlider = document.getElementById('line-width-slider');
+
+        let radius = 50;
+        let lineWidth = 3;
+
+        const drawCircles = () => {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            // First circle with dotted line
+            context.setLineDash([lineWidth, lineWidth]);
+            context.beginPath();
+            context.arc(150, 150, radius, 0, 2 * Math.PI);
+            context.lineWidth = lineWidth;
+            context.stroke();
+
+            // Second circle
+            context.setLineDash([]); // Reset line style
+            context.beginPath();
+            context.arc(225, 150, radius, 0, 2 * Math.PI);
+            context.lineWidth = lineWidth;
+            context.stroke();
+
+            // Third circle
+            context.beginPath();
+            context.arc(300, 150, radius, 0, 2 * Math.PI);
+            context.lineWidth = lineWidth;
+            context.stroke();
+        };
+
+        radiusSlider.addEventListener('input', () => {
+            radius = parseInt(radiusSlider.value);
+            drawCircles();
+        });
+
+        lineWidthSlider.addEventListener('input', () => {
+            lineWidth = parseInt(lineWidthSlider.value);
+            drawCircles();
+        });
+
+        drawCircles();
+    </script>
+</body>
+</html>
