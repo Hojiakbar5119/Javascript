@@ -353,3 +353,49 @@
 
 
 //! filter sortirovka qiladi search joylashuv o'rnini o'zgartiradi 
+
+
+
+
+
+
+const movies =[
+    {name: 'Avatar 3d', year:2008, rating:9},
+    {name: 'Titanik 3d', year:1997, rating:7},
+    {name: 'Forjas 9 3d', year:2020, rating:4},
+    {name: 'Avengers 3d', year:2012, rating:6},
+    {name: 'Ommar', year:2008, rating:9},
+]
+
+
+
+console.log(movies.map(vl=> vl.rating + 1));
+
+// const numbers= [2,3,4,5]
+
+// const mapNumbers = numbers.map((vl)=> {
+//     return vl**2
+// })
+
+// console.log(mapNumbers);
+
+//? foreach orqali 
+
+// const Newnumber = []
+
+// numbers.forEach(vl=>{
+//     Newnumber.push(vl**2)
+// })
+
+// console.log(numbers);
+
+
+
+// const numbers = [1, 2, 3, 4, 5];
+// const newNumbers = [];
+
+// numbers.forEach(vl => {
+//   newNumbers.push(vl ** 2);
+// });
+
+// console.log(newNumbers);
